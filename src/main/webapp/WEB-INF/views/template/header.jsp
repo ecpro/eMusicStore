@@ -13,14 +13,15 @@
     <link rel="icon" href="../../favicon.ico">
 
     <title></title>
-
+    <script src ="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.1/angular.min.js"></script>
     <!-- Bootstrap core CSS -->
     <link href="${pageContext.request.contextPath}/static/css/bootstrap.min.css" rel="stylesheet">
     <link href="${pageContext.request.contextPath}/static/css/carousel.css">
+    <link href="${pageContext.request.contextPath}/static/css/main.css">
     <link href="https://cdn.datatables.net/1.10.10/css/jquery.dataTables.min.css" rel="stylesheet">
+
 </head>
-<!-- NAVBAR
-================================================== -->
+<!-- NAVBAR ================================================== -->
 <body>
 <div class="navbar-wrapper">
     <div class="container">
@@ -35,31 +36,19 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="<c:url value="/" /> ">Le's Music Store</a>
+                    <a class="navbar-brand" href="<c:url value="/" /> ">WUSIC</a>
                 </div>
                 <div id="navbar" class="navbar-collapse collapse">
-                    <ul class="nav navbar-nav">
+                    <ul class="nav navbar-nav navbar-left">
                         <li><a href="<c:url value="/" /> ">Home</a></li>
-                        <li><a href="<c:url value="/product/productList/all" />">Products</a></li>
-                        <li><a href="<c:url value="/about" />">About Us</a></li>
+                        <li><a href="<c:url value="/products/productList" />">Products</a></li>
+                        <li><a href="<c:url value="/contact" />">Contact</a></li>
                     </ul>
                     <ul class="nav navbar-nav pull-right">
-                        <c:if test="${pageContext.request.userPrincipal.name != null}">
-                            <li><a>Welcome: ${pageContext.request.userPrincipal.name}</a></li>
-                            <li><a href="<c:url value="/j_spring_security_logout" />">Logout</a></li>
-                            <c:if test="${pageContext.request.userPrincipal.name != 'admin'}">
-                                <li><a href="<c:url value="/customer/cart" />">Cart</a></li>
-                            </c:if>
-                            <c:if test="${pageContext.request.userPrincipal.name  == 'admin'}">
-                                <li><a href="<c:url value="/admin" />">Admin</a></li>
-                            </c:if>
-                        </c:if>
-                        <c:if test="${pageContext.request.userPrincipal.name  == null}">
-                            <li><a href="<c:url value="/login/" />">Login</a></li>
-                            <li><a href="<c:url value="/register" />">Register</a></li>
-                        </c:if>
+                        <li><a href="<c:url value="/admin" />">Admin &nbsp;</a></li>
                     </ul>
                 </div>
+
             </div>
         </nav>
 

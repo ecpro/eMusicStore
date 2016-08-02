@@ -9,7 +9,7 @@
     <form:form action="${pageContext.request.contextPath}/admin/productInventory/editProduct" method="post" commandName="product" enctype="multipart/form-data">
         <%-- Product name --%>
         <div class="form-group">
-            <label for="name">Name</label>
+            <label for="name">Name</label><form:errors path="productName" cssStyle="color: #ff0000;"/>
             <form:input path="productName" type="text" id="name" value="${product.productName}" class="form-control"/>
         </div>
         <form:hidden path="productId" value="${product.productId}"/>
@@ -28,7 +28,7 @@
         </div>
         <%-- Product Price --%>
         <div class="form-group">
-            <label for="price">Price</label>
+            <label for="price">Price</label><form:errors path="productPrice" cssStyle="color: #ff0000;"/>
             <form:input path="productPrice" type="text" value="${product.productPrice}" id="price" class="form-control"/>
         </div>
         <%-- Product Condition --%>
@@ -47,7 +47,7 @@
 
         <%-- Product Units in stock --%>
         <div class="form-group">
-            <label for="units">Units In Stock</label>
+            <label for="units">Units In Stock</label><form:errors path="unitInStock" cssStyle="color: #ff0000;"/>
             <form:input path="unitInStock" id="units" type="text" value="${product.unitInStock}" class="form-control"/>
         </div>
 

@@ -4,6 +4,7 @@
 
 <!-- Carousel
 ================================================== -->
+<div class="container">
 <div id="myCarousel" class="carousel slide" data-ride="carousel">
     <!-- Indicators -->
     <ol class="carousel-indicators">
@@ -13,9 +14,7 @@
     </ol>
     <div class="carousel-inner" role="listbox">
         <div class="item active">
-            <img class="first-slide home-image"
-                 src="${pageContext.request.contextPath}/static/images/back1.jpg" />"
-                 alt="First slide">
+            <img class="first-slide home-image img-responsive" src="${pageContext.request.contextPath}/static/images/back1.jpg" alt="First slide">
 
             <div class="container">
                 <div class="carousel-caption">
@@ -28,9 +27,7 @@
             </div>
         </div>
         <div class="item">
-            <img class="second-slide home-image"
-                 src="${pageContext.request.contextPath}/static/images/back2.jpg" />"
-                 alt="Second slide">
+            <img class="second-slide home-image img-responsive" src="${pageContext.request.contextPath}/static/images/back2.jpg"alt="Second slide">
 
             <div class="container">
                 <div class="carousel-caption">
@@ -43,8 +40,7 @@
         </div>
         <div class="item">
             <img class="third-slide home-image"
-                 src="${pageContext.request.contextPath}/static/images/back3.jpg" />"
-                 alt="Third slide">
+                 src="${pageContext.request.contextPath}/static/images/back3.jpg" alt="Third slide">
 
             <div class="container">
                 <div class="carousel-caption">
@@ -64,6 +60,7 @@
         <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
         <span class="sr-only">Next</span>
     </a>
+</div>
 </div>
 <!-- /.carousel -->
 

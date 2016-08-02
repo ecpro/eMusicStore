@@ -1,0 +1,14 @@
+
+.container-wrapper {
+    height: 80%;
+    margin: auto;
+    margin-bottom:300px;
+    margin-top:80px;
+
+}
+
+.home-image {
+    display: block;
+    width:100% !important;
+    height:auto !important;
+}
